@@ -1,3 +1,43 @@
 .app {
-    padding: 0 16px;
+  padding: 0 16px;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 32px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 10px;
+  border-radius: 6px;
+  background-color: #1f2937;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.pagination a:hover {
+  background-color: #374151;
+}
+
+.active a {
+  background-color: #2563eb;
+}
+
+.disabled a {
+  cursor: not-allowed;
+  opacity: 0.5;
 }
